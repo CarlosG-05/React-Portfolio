@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "gsap": "^3.13.0",
+    "install": "^0.13.0",
+    "npm": "^11.4.2",
+    "react-router-dom": "^7.6.2"
+  }
+}

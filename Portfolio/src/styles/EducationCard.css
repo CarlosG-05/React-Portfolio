@@ -1,0 +1,73 @@
+.education-card {
+  background: #23262f;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.45), 0 1.5px 6px rgba(0,0,0,0.18);
+  padding: 2rem 1.5rem;
+  max-width: 575px;
+  margin: 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: box-shadow 0.2s, transform 0.2s;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #f1f3f7;
+}
+
+.education-card:hover {
+  box-shadow: 0 8px 40px rgba(0,198,255,0.18), 0 3px 12px rgba(0,198,255,0.10);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.university-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  filter: drop-shadow(0 2px 8px #00c6ff33);
+}
+
+.university-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0.5rem 0 0.25rem 0;
+  text-align: center;
+  color: #00c6ff;
+  letter-spacing: 0.02em;
+}
+
+.degree {
+  font-size: 1rem;
+  color: #b0b8c1;
+  margin-bottom: 0.25rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.timeline {
+  font-size: 0.95rem;
+  color: #7ecbff;
+  text-align: center;
+  margin-top: 0.3rem;
+}
+
+/* Mobile styles */
+@media (max-width: 700px) {
+  .education-card {
+    max-width: 100vw;
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem 0.5rem;
+    border-radius: 0.7rem;
+  }
+  .university-logo {
+    width: 48px;
+    height: 48px;
+  }
+  .university-name {
+    font-size: 1rem;
+  }
+  .degree,
+  .timeline {
+    font-size: 0.92rem;
+  }
+}
