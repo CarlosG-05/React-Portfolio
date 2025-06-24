@@ -1,0 +1,101 @@
+.project {
+  background: #23262f;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.35), 0 1.5px 6px rgba(0,0,0,0.18);
+  padding: 0; /* Remove all padding from the card itself */
+  margin: 1.5rem auto;
+  max-width: 420px;
+  color: #f1f3f7;
+  font-family: 'Inter', system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* changed from flex-start */
+  transition: box-shadow 0.2s, transform 0.2s;
+  overflow: hidden;
+  height: 100%; /* ensures the card fills the grid cell */
+}
+
+.project:hover {
+  box-shadow: 0 8px 40px rgba(0,198,255,0.18), 0 3px 12px rgba(0,198,255,0.10);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.project-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #00c6ff;
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.01em;
+}
+
+.project-date {
+  font-size: 1rem;
+  color: #b0b8c1;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.project-description {
+  font-size: 1.08rem;
+  color: #e0e6ed;
+  margin-bottom: 1.2rem;
+  line-height: 1.6;
+}
+
+.project-content {
+  width: 100%;
+  padding: 0 1.5rem 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* take up all available space */
+}
+
+.project-links {
+  margin-top: auto; /* push links to the bottom */
+}
+
+.project-link {
+  display: inline-block;
+  background: linear-gradient(90deg, #0077cc 0%, #00c6ff 100%);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.7rem;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px #00c6ff22;
+}
+
+.project-link:hover {
+  background: #181a20;
+  color: #00c6ff;
+  box-shadow: 0 4px 16px #00c6ff33;
+}
+
+.project-banner {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  border-top-left-radius: 1.2rem;
+  border-top-right-radius: 1.2rem;
+  display: block;
+  margin: 0;
+  background: #181a20;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .project {
+    max-width: 100vw;
+    border-radius: 0.7rem;
+  }
+  .project-content {
+    padding: 0 0.5rem 1rem 0.5rem;
+  }
+  .project-title {
+    font-size: 1.1rem;
+  }
+  .project-description {
+    font-size: 0.98rem;
+  }
+}

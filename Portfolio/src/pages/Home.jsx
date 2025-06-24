@@ -13,11 +13,11 @@ function Home() {
         <div className="home">
             <header className="home-intro">
                 <SplitText
-                    text="I'm Carlos Guerrero"
+                    text="Hi, I'm Carlos Guerrero"
                     className="split-text-hero"
-                    delay={100}
-                    duration={0.6}
-                    ease="power3.out"
+                    delay={10}
+                    duration={2}
+                    ease="elastic.out(1, 0.3)"
                     splitType="chars"
                     from={{ opacity: 0, y: 40 }}
                     to={{ opacity: 1, y: 0 }}
