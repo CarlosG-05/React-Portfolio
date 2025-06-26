@@ -6,7 +6,7 @@ A modern, responsive personal portfolio website built with React. Showcase your 
 
 ## 🚀 Live Demo
 
-Add the deployed URL here (e.g. GitHub Pages, Netlify, Vercel)
+https://carlosengineer.netlify.app/
 
 ---
 
@@ -20,18 +20,15 @@ Add the deployed URL here (e.g. GitHub Pages, Netlify, Vercel)
 - Contact form or mailto link
 - Footer with social media icons
 
-Customize it further by adding sections like About Me, Blog, Resume download, etc.
-
 ---
 
 ## 🛠️ Technologies Used
 
 - **React** for core UI
 - **CSS / SCSS** for styling
-- Optionally:
-  - react‑router for in-site page navigation
-  - framer‑motion or react‑transition‑group for animations
-  - FontAwesome / react‑icons for icons
+- react‑router for in-site page navigation
+- framer‑motion or react‑transition‑group for animations
+- FontAwesome / react‑icons for icons
 
 ---
 
