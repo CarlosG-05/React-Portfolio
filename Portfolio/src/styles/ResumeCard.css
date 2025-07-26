@@ -1,0 +1,18 @@
+.resume-card {
+  max-width: 900px; /* Adjust to match your NavBar's width */
+  margin: 40px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  background: #fff;
+  padding: 0;
+  overflow: hidden;
+}
+
+.resume-card iframe {
+  display: block;
+  width: 100%;
+  height: 87vh;
+  
+  border: none;
+  background: #f9f9f9;
+}
