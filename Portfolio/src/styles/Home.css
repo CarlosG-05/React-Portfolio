@@ -94,8 +94,12 @@ body {
   background: var(--card-dark);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
-  padding: 2.5rem 2rem;
+  padding: 2.5rem 2rem; /* Restored horizontal padding */
   margin-bottom: 2rem;
+  max-width: var(--main-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .about-me h1 {
@@ -111,21 +115,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
-}
-
-
-
-.education-section p {
-  font-size: 1.08rem;
-  color: var(--text-secondary);
-  margin-bottom: 1.5rem;
-  text-align: center;
-  line-height: 1.7;
-  font-weight: 400;
-  background: rgba(0,0,0,0.08);
-  border-radius: 0.7rem;
-  padding: 1rem 1rem;
+  gap: 2.5rem;
+  width: 100%;
 }
 
 /* Responsive adjustments */
@@ -189,4 +180,27 @@ body {
     word-break: break-word;
     padding: 0.7rem 0.2rem;
   }
+}
+
+/* Responsive: stack on small screens */
+@media (max-width: 900px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .education-section,
+  .education-card-wrapper {
+    max-width: 100%;
+    width: 100%;
+    justify-content: center;
+    padding: 0 0.5rem;
+    box-sizing: border-box;
+  }
+  .education-section p {
+    text-align: center;
+  }
+}
+
+.education-section p {
+  line-height: 1.8; /* or your preferred value */
 }

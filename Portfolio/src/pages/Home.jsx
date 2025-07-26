@@ -37,7 +37,9 @@ function Home() {
                                 I am a first-generation college student pursuing a Bachelor’s degree in Electrical Engineering with a concentration in Electronic Circuits and Systems at the University of California, San Diego. My passion for engineering stems from a lifelong fascination with how technology shapes the world around us. I am eager to apply my skills to develop innovative solutions that have a positive impact on society. Currently, I am seeking a summer internship to gain hands-on experience, deepen my understanding of real-world engineering practices, and continue growing both technically and professionally.
                             </p>
                         </section>
-                        <EducationCard />
+                        <div className="education-card-wrapper">
+                            <EducationCard />
+                        </div>
                     </div>
                 </div>
             </main>

@@ -11,7 +11,16 @@ function Project(props) {
                 <h3 className="project-date">{props.date}</h3>
                 <p className="project-description">{props.description}</p>
                 <div className="project-links">
-                    <a href={props.githubLink} target="_blank" rel="noopener noreferrer" className="project-link">GitHub</a>
+                    {props.githubLink && (
+                        <a href={props.githubLink} target="_blank" rel="noopener noreferrer" className="project-link">
+                            GitHub
+                        </a>
+                    )}
+                    {props.siteLink && (
+                        <a href={props.siteLink} target="_blank" rel="noopener noreferrer" className="project-link project-link-site">
+                            Website
+                        </a>
+                    )}
                 </div>
             </div>
         </div>

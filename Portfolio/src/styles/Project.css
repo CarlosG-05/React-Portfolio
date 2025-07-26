@@ -51,6 +51,8 @@
 }
 
 .project-links {
+  display: flex;
+  gap: 1rem; /* Adjust the gap as needed */
   margin-top: auto; /* push links to the bottom */
 }
 
