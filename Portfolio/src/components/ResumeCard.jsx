@@ -1,17 +1,27 @@
 import React from 'react';
-import resume from '../images/resume.pdf';
+import resumePDF from '../images/resume.pdf';
+import resumeImg from '../images/resume.jpg';
 import '../styles/ResumeCard.css';
 
 function ResumeCard() {
     return (
         <div className="resume-card">
-            <iframe
-                src={resume + "#view=FitH"}
-                width="100%"
-                height="100vh"
-                title="Resume PDF"
-                style={{ minHeight: '900px' }}
+            <img
+                src={resumeImg}
+                alt="Resume Preview"
+                className="resume-image"
             />
+            <div className="resume-header">
+                <a
+                    href={resumePDF}
+                    className="resume-download-btn"
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Download PDF
+                </a>
+            </div>
         </div>
     );
 }

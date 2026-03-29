@@ -1,23 +1,24 @@
 .education-card {
-  background: #293042; /* lighter and more blue than #23262f */
-  border-radius: 1.2rem;
-  box-shadow: 0 8px 40px #00c6ff33, 0 4px 16px #181a2033;
-  border: 2px solid #00c6ff33; /* subtle accent border */
-  padding: 2rem 1.5rem;
+  background: rgba(30, 42, 60, 0.35);
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.18);
+  border: 1.5px solid #2196f3;
+  padding: 1.2rem 1rem;
   max-width: 575px;
   margin: 2rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: box-shadow 0.2s, transform 0.2s, border 0.2s;
+  transition: border 0.2s;
   font-family: 'Inter', system-ui, sans-serif;
-  color: #f1f3f7;
+  color: #fff;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .education-card:hover {
-  box-shadow: 0 12px 48px #00c6ff55, 0 6px 24px #181a2055;
-  border: 2px solid #00c6ff;
-  transform: translateY(-2px) scale(1.025);
+  border: 2px solid #1565c0;
+  transform: translateY(-2px) scale(1.01);
 }
 
 .university-logo {
@@ -25,7 +26,7 @@
   height: 64px;
   object-fit: contain;
   margin-bottom: 1rem;
-  filter: drop-shadow(0 2px 8px #00c6ff33);
+  filter: none;
 }
 
 .university-name {
@@ -33,13 +34,14 @@
   font-weight: 700;
   margin: 0.5rem 0 0.25rem 0;
   text-align: center;
-  color: #00c6ff;
+  color: #2196f3;
+  font-weight: 700;
   letter-spacing: 0.02em;
 }
 
 .degree {
   font-size: 1rem;
-  color: #b0b8c1;
+  color: #fff;
   margin-bottom: 0.25rem;
   text-align: center;
   font-weight: 500;
@@ -47,7 +49,7 @@
 
 .timeline {
   font-size: 0.95rem;
-  color: #7ecbff;
+  color: #90caf9;
   text-align: center;
   margin-top: 0.3rem;
 }

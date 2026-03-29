@@ -1,8 +1,12 @@
 .project {
-  background: #23262f;
-  border-radius: 1.2rem;
-  box-shadow: 0 4px 32px rgba(0,0,0,0.35), 0 1.5px 6px rgba(0,0,0,0.18);
-  padding: 0; /* Remove all padding from the card itself */
+  background: rgba(30, 42, 60, 0.35);
+  border-radius: 0.6rem;
+  box-shadow: 0 4px 24px 0 rgba(0,0,0,0.18);
+  padding: 1.2rem 1rem 1.2rem 1rem;
+  border: 1.5px solid #2195f300;
+  color: #fff;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   margin: 1.5rem auto;
   max-width: 420px;
   color: #f1f3f7;
@@ -16,15 +20,16 @@
 }
 
 .project:hover {
-  box-shadow: 0 8px 40px rgba(0,198,255,0.18), 0 3px 12px rgba(0,198,255,0.10);
-  transform: translateY(-2px) scale(1.02);
+  box-shadow: none;
+  transform: translateY(-5px) scale(1.00);
 }
 
 .project-title {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #00c6ff;
-  margin-bottom: 0.3rem;
+  color: #2196f3;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
   letter-spacing: 0.01em;
 }
 
@@ -37,7 +42,7 @@
 
 .project-description {
   font-size: 1.08rem;
-  color: #e0e6ed;
+  color: #ffffff;
   margin-bottom: 1.2rem;
   line-height: 1.6;
 }
@@ -58,31 +63,37 @@
 
 .project-link {
   display: inline-block;
-  background: linear-gradient(90deg, #0077cc 0%, #00c6ff 100%);
+  background: #2196f3;
   color: #fff;
   font-weight: 600;
   text-decoration: none;
-  padding: 0.5rem 1.2rem;
-  border-radius: 0.7rem;
-  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-  box-shadow: 0 2px 8px #00c6ff22;
+  padding: 0.45rem 1.1rem;
+  border-radius: 0.6rem;
+  border: none;
+  box-shadow: 0 2px 8px #2196f322;
+  transition: background 0.16s, color 0.16s, box-shadow 0.16s, transform 0.16s;
+  font-size: 1rem;
+  cursor: pointer;
 }
 
 .project-link:hover {
-  background: #181a20;
-  color: #00c6ff;
-  box-shadow: 0 4px 16px #00c6ff33;
+  background: #1565c0;
+  color: #fff;
+  box-shadow: 0 4px 16px #2196f344;
+  transform: none;
 }
 
 .project-banner {
   width: 100%;
   height: 110px;
   object-fit: cover;
-  border-top-left-radius: 1.2rem;
-  border-top-right-radius: 1.2rem;
+  border-top-left-radius: 0.6rem;
+  border-top-right-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
+  border-bottom-right-radius: 0.6rem;
   display: block;
   margin: 0;
-  background: #181a20;
+  background: #f4f8fb;
 }
 
 /* Responsive */

@@ -17,9 +17,15 @@ function Project(props) {
                         </a>
                     )}
                     {props.siteLink && (
-                        <a href={props.siteLink} target="_blank" rel="noopener noreferrer" className="project-link project-link-site">
-                            Website
-                        </a>
+                        props.openPdf ? (
+                            <a href={props.siteLink} target="_blank" rel="noopener noreferrer" className="project-link project-link-site">
+                                View Report
+                            </a>
+                        ) : (
+                            <a href={props.siteLink} target="_blank" rel="noopener noreferrer" className="project-link project-link-site">
+                                Website
+                            </a>
+                        )
                     )}
                 </div>
             </div>
